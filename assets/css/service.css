@@ -110,4 +110,8 @@ input, textarea {
 .filters-container .filters-content .row .all .single-menu .title-wrap p {
   font-family: "Inter";
   color: #9AA0A0;
+}
+
+.pagination {
+  height: 39px;
 }/*# sourceMappingURL=service.css.map */

@@ -21,3 +21,9 @@ input,textarea{
 .filters-container{
    @include filter;
 }
+
+// pagination
+.pagination{
+    height: 39px;
+    
+}
