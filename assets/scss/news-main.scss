@@ -1,0 +1,259 @@
+@import "font";
+@import "variable";
+@import "mixin";
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    box-sizing: border-box;
+}
+input,textarea{
+    border: none;
+}
+
+// banner
+.banner{
+    max-width: $max-width-homepage;
+   height: 1171px;
+   margin: auto;
+   padding: $padding;
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background-color: $dark-blue-01;
+   .header{
+    height: 156px;
+    @include content-top;
+    h1{
+        color: $dark-04;
+    }
+   }
+   .center{
+    margin-top: 80px;
+    height: 775px;
+    width: 100%;
+    .first{
+        width: 100%;
+        height: 360px;
+        display: flex;
+        column-gap: 24px;
+        .item1{
+            flex: 2;
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+                min-height: 400px;
+            }
+            .text{
+                color: $light-04;
+                position: absolute;
+                left: 39px;
+                bottom: 90px;
+                p:first-of-type{
+                    span{
+                        @include font($fontInter);
+                        font-size: 14px;
+                    }
+                    a{
+                        width: 3px;
+                        height: 3px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
+                h3{
+                    @include font($fontAnybody);
+                    font-weight: bold;
+                }
+                p:last-of-type{
+                    @include font($fontInter);
+                }
+                div{
+                    @include font($fontInter);
+                    border-radius: 999px;
+                    height: 40px;
+                    width: 132px;
+                    border: 1px solid $light-04;
+                    text-align: center;
+                    line-height: 40px;
+                }
+            }
+        }
+        .item2{
+            flex: 1;
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+                min-height: 400px;
+            }
+            .text{
+                color: $light-04;
+                position: absolute;
+                left: 39px;
+                bottom: 90px;
+                p:first-of-type{
+                    span{
+                        @include font($fontInter);
+                        font-size: 14px;
+                    }
+                    a{
+                        width: 3px;
+                        height: 3px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
+                h3{
+                    @include font($fontAnybody);
+                    font-weight: bold;
+                }
+                p:last-of-type{
+                    @include font($fontInter);
+                }
+                div{
+                    @include font($fontInter);
+                    border-radius: 999px;
+                    height: 40px;
+                    width: 132px;
+                    border: 1px solid $light-04;
+                    text-align: center;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    .last{
+        height: 391px;
+        display: flex;
+        column-gap: 24px;
+        margin-top: 24px;
+        .item{
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .text{
+                @include news-text;
+                position: static;
+            }   
+        }
+    }
+   }
+}
+
+// article-categories
+.article-categories{
+    padding: $padding;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: $max-width-homepage;
+    display: flex;
+    column-gap: 181px;
+    .article{
+        flex: 2;
+        .head{
+            display: flex;
+            justify-content: space-between;
+            div{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                h3{
+                    @include font($fontAnybody);
+                    font-weight: bold;
+                    color: $primary-green;
+                    display: inline-block;
+                    margin-left: 16px;
+                    color: $primary-green;
+                }   
+            }
+            p{
+                @include font($fontInter);
+                font-weight: bold;
+                font-size: 16px;
+                width: 131px;
+                height: 38px;
+                border-radius: 999px;
+                color: $primary-green;
+                border: 2px solid $primary-green;
+                text-align: center;
+                line-height: 38px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .content{
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 36px;
+            .item{
+                div{
+                    @include news-text;
+                    position: static;
+                    h5{
+                        @include font($fontAnybody);
+                        font-weight: bold;
+                        color: $dark-blue-01;
+                    }
+                    p:last-of-type{
+                        color: $dark-blue-01;
+                    }
+                    div{
+                        @include font($fontInter);
+                        font-weight: bold;
+                        color: $dark-03;
+                    }
+                }
+            }
+        }
+        .pagination{
+            @include pagination;
+        }
+    }
+    .categories{
+        flex: 1;
+        .head{
+            h3{
+                @include font($fontAnybody);
+                color: $primary-green;
+                font-weight: bold;
+            }
+        }
+        .content{
+            margin-top: 32px;
+            p{
+                padding-left: 7px 20px;
+                margin-top: 8px;
+                color: $dark-blue-01;
+                @include font($fontAnybody);
+                font-size: 22px;
+                &:first-of-type{
+                    font-weight: bold;
+                    background-color: $primary-green-10;
+                    border-left: 4px solid $primary-green;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .followus{
+            margin-top: 181px;
+            h3{
+                @include font($fontAnybody);
+                color: $primary-green;
+                font-weight: bold;
+            }
+        }
+    }
+}
