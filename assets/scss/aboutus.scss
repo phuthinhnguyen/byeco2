@@ -1,0 +1,344 @@
+@import "font";
+@import "variable";
+@import "mixin";
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    box-sizing: border-box;
+}
+input,textarea{
+    border: 1px solid $dark-03;
+}
+
+// banner
+.banner{
+   height: 540px;
+   max-width: $max-width-homepage;
+   margin: auto;
+   position: relative;
+   img{
+        max-height: 477px;
+   }
+   div{
+        height: 326px;
+        padding: $padding;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $dark-blue-01;
+        max-width: 703px;
+        padding-top: 39px;
+        padding-bottom: 39px;
+        p{
+            @include font($fontInter);
+            color: $dark-04;
+        }
+        h1{
+            @include font($fontAnybody);
+            font-weight: bold;
+            color: $primary-green;
+        }
+        h4{
+            @include font($fontAnybody);
+            color: $light-02;
+        }
+   }
+}
+
+// article
+.article{
+    max-width: $max-width-homepage;
+    margin: auto;
+    padding: $padding;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    height: 456px;
+    margin-top: 50px;
+    .container{
+        display: flex;
+        column-gap: 20px;
+        img{
+
+        }
+        a{
+            width: 25px;
+            height: 100px;
+            background-color: $state-warning-01;
+            margin-top: 10px;
+        }
+        div{
+            h1{
+                @include font($fontAnybody);
+                font-weight: bold;
+                color: $dark-blue-01;
+            }
+            p{
+                &:first-of-type{
+                    @include font($fontAnybody);
+                    font-weight: bold;
+                    font-size: 60px;
+                    color: $primary-green;
+                }
+                &:last-of-type{
+                    @include font($fontAnybody);
+                }
+          
+            }
+        }
+    }
+    
+}
+
+// aboutus-content1
+.aboutus-content1{
+    height: 1217px;
+    margin: auto;
+    max-width: $max-width-homepage;
+    position: relative;
+    .head{
+        height: 567px;
+        padding: $padding;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        column-gap: 27px;
+        div{
+            flex: 1;
+            p{
+                &:last-of-type{
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+    .center{
+        position: absolute;
+        left: 112px;
+        top:470px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        .item{
+            position: relative;
+            background-color: $primary-green;
+            width: 312px;
+            height: 314px;
+            padding-top: 77px;
+            padding-left: 30px;
+           
+            h4{
+                @include font($fontAnybody);
+                color: $primary-green-10;
+              
+            }
+            h2{
+                @include font($fontAnybody);
+                color: $primary-green-10; 
+                font-weight: bold;
+            }
+            img{
+                width: 86px;
+                height: 86px;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+        .item2,.item4{
+            background-color: $dark-02;
+        }
+        .item3{
+            background-color: #F1553B;
+        }
+        .item5{
+            background-color: $state-warning-01;
+        }
+    }
+    .bottom{
+        height: 650px;
+        position: relative;
+     
+        p{
+            position: absolute;
+            max-width: 562px;
+            right: 112px;
+            top: 80px;
+            @include font($fontInter);
+            font-size: 16px;
+        }
+    }
+
+}
+
+// aboutus-content2
+.aboutus-content2{
+    padding: $padding;
+    margin: auto;
+    max-width: $max-width-homepage;
+    margin-top: 80px;
+    .head{
+        height: 441px;
+        display: flex;
+        .left{
+            flex: 1;
+            position: relative;
+            background-color: $primary-green-80;
+            padding: 46px 27px;
+            h1{
+                @include font($fontAnybody);
+                font-weight: bold;
+                color: $primary-green;
+            }
+            p{
+                color: $dark-03;
+                @include font($fontInter);
+                margin-top: 32px;
+            }
+            img{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .right{
+            flex: 1;
+            background-color: $primary-green;
+            position: relative;
+            padding: 46px 27px;
+            h1{
+                @include font($fontAnybody);
+                font-weight: bold;
+                color: $state-success-04;
+            }
+            h2{
+                @include font($fontAnybody);
+                font-weight: bold;
+                color: $dark-blue-01;
+            }
+            img{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                right: 0;
+                top: 0;
+            }
+        }
+        
+    }
+    .bottom{
+        display: flex;
+        height: 328px;
+        .left{
+            flex: 1;
+            background-color: $primary-coral-80;
+            color: $light-04;
+            padding: 46px 27px;
+            h1{
+                @include font($fontAnybody);
+                font-weight: bold;     
+            }
+            p{
+                @include font($fontInter);
+                margin-top: 32px;
+            }
+        }
+        .right{
+            flex: 2;
+       
+        }
+    }
+}
+
+// animate number
+#section-counter{
+    margin-top: 80px;
+}
+
+// ourexpertise
+.ourexpertise{
+    @include content-top;
+    margin-top: 80px;
+
+}
+
+// slide
+.slide{
+    max-width: $max-width-homepage;
+    margin: auto;
+    padding: $padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    .item{
+        text-align: center;
+        img{
+
+        }
+        a{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $primary-green;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+        }
+        h6{
+            @include font($fontAnybody);
+            font-weight: bold;
+            color: $dark-blue-01;
+            margin-top: 20px;
+        }
+        p{
+            @include font($fontInter);
+            font-size: 14px;
+            color: $primary-coral-50;
+        }
+    }
+}
+
+// ourclients
+.ourclients{
+    max-width: $max-width-homepage;
+    margin: auto;
+    padding: $padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    column-gap: 20px;
+    .left{
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    a{
+        width: 5px;
+        height: 120px;
+        background-color: $state-warning-01;
+        margin-right: 10px;     
+    }
+    .right{
+        p{
+            @include font($fontInter);
+            &:first-of-type{
+                color: $primary-coral-50;
+            }
+            &:last-of-type{
+                color: $dark-03;
+            }   
+         
+        }
+        h1{
+            @include font($fontAnybody);
+            font-weight: bold;
+            color: $primary-green;
+        }
+    }
+}
