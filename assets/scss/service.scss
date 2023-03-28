@@ -20,6 +20,17 @@ input,textarea{
 // filter
 .filters-container{
    @include filter;
+   .filters-content{
+    .row{
+        .all{
+            .single-menu{
+                .title-wrap{
+                    @include ourservice-item;
+                }
+            }
+        }
+    }
+   }
 }
 
 // pagination
