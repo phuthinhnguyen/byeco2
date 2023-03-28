@@ -98,20 +98,99 @@ input, textarea {
   text-align: center;
   box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2);
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap img {
+.filters-container .filters-content .row .all .single-menu .title-wrap div {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap div img {
   width: 74px;
   height: 64px;
+  margin-bottom: 20px;
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap h4 {
+.filters-container .filters-content .row .all .single-menu .title-wrap div h3 {
   font-family: "Anybody";
   font-weight: bold;
-  color: #060810;
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap p {
-  font-family: "Inter";
+.filters-container .filters-content .row .all .single-menu .title-wrap div p {
   color: #9AA0A0;
+  text-align: center;
+  padding: 10px;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap .img-service-hover {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  left: 15px;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap:hover {
+  color: #FAFAFC;
+  cursor: pointer;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap:hover .img-service-hover {
+  opacity: 1;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap:hover div p {
+  color: #FAFAFC;
 }
 
 .pagination {
   height: 39px;
-}/*# sourceMappingURL=service.css.map */
+  display: flex;
+  width: 390px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.pagination img {
+  width: 22px;
+  height: 22px;
+}
+.pagination div {
+  display: flex;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  align-items: center;
+}
+.pagination div a {
+  text-decoration: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  line-height: 38px;
+  background-color: #E0E0E0;
+  text-align: center;
+  color: #060810;
+  transition: 0.3s;
+}
+.pagination div a:hover {
+  background-color: #060810;
+  color: #E0E0E0;
+}
+
+@media screen and (max-width: 991px) {
+  .filters-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .filters-container .filters-content .row .all {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .filters-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .filters-container .filters-wrap #all-responsive {
+    display: none;
+  }
+  .filters-container .filters-content .row .all {
+    max-width: 100%;
+  }
+}

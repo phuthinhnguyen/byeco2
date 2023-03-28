@@ -357,9 +357,10 @@ nav .row .offcanvas .offcanvas-header .offcanvas-header-bottom div img {
 .content-ourservices .content-ourservices-bottom .item .img-service-hover {
   position: absolute;
   opacity: 0;
-  width: 105%;
+  width: 100%;
   height: 100%;
   transition: 0.5s;
+  left: 15px;
 }
 .content-ourservices .content-ourservices-bottom .item:hover {
   color: #FAFAFC;
@@ -1378,4 +1379,4 @@ footer .footer-bottom p {
   .content-ourservices {
     height: 1200px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
