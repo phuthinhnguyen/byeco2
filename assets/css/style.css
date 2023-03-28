@@ -301,6 +301,7 @@ nav .row .offcanvas .offcanvas-header .offcanvas-header-bottom div img {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  align-items: center;
 }
 .content-ourservices .content-ourservices-top h1 {
   color: #20A049;
@@ -308,6 +309,7 @@ nav .row .offcanvas .offcanvas-header .offcanvas-header-bottom div img {
   font-family: "Anybody";
 }
 .content-ourservices .content-ourservices-top p {
+  max-width: 552px;
   font-family: "Inter";
 }
 .content-ourservices .content-ourservices-top p:first-of-type {
@@ -508,6 +510,7 @@ nav .row .offcanvas .offcanvas-header .offcanvas-header-bottom div img {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  align-items: center;
 }
 .content-whatpeoplesayaboutus .content-whatpeoplesayaboutus-top h1 {
   color: #20A049;
@@ -515,6 +518,7 @@ nav .row .offcanvas .offcanvas-header .offcanvas-header-bottom div img {
   font-family: "Anybody";
 }
 .content-whatpeoplesayaboutus .content-whatpeoplesayaboutus-top p {
+  max-width: 552px;
   font-family: "Inter";
 }
 .content-whatpeoplesayaboutus .content-whatpeoplesayaboutus-top p:first-of-type {
@@ -596,6 +600,7 @@ nav .row .offcanvas .offcanvas-header .offcanvas-header-bottom div img {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  align-items: center;
 }
 .content-newsandblogs .content-newsandblogs-top h1 {
   color: #20A049;
@@ -603,6 +608,7 @@ nav .row .offcanvas .offcanvas-header .offcanvas-header-bottom div img {
   font-family: "Anybody";
 }
 .content-newsandblogs .content-newsandblogs-top p {
+  max-width: 552px;
   font-family: "Inter";
 }
 .content-newsandblogs .content-newsandblogs-top p:first-of-type {
@@ -865,6 +871,7 @@ nav .row .offcanvas .offcanvas-header .offcanvas-header-bottom div img {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  align-items: center;
 }
 .content-theytrustus .content-theytrustus-top h1 {
   color: #20A049;
@@ -872,6 +879,7 @@ nav .row .offcanvas .offcanvas-header .offcanvas-header-bottom div img {
   font-family: "Anybody";
 }
 .content-theytrustus .content-theytrustus-top p {
+  max-width: 552px;
   font-family: "Inter";
 }
 .content-theytrustus .content-theytrustus-top p:first-of-type {

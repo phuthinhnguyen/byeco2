@@ -5,12 +5,14 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
+    align-items: center;
     h1{
         color: $primary-green;
         font-weight: bold;
         @include font($fontAnybody);
     }
     p{
+        max-width: 552px;
         @include font($fontInter);
         &:first-of-type{
             color: $primary-coral-50;
@@ -202,12 +204,15 @@
             font-size: 14px;
         }
         a{
+            display: inline-block;
             width: 3px;
             height: 3px;
             background-color: #fff;
             border-radius: 50%;
             margin-left: 10px;
             margin-right: 10px;
+            text-decoration: none;
+            border: 1px solid black;
         }
     }
     h3{
@@ -217,7 +222,7 @@
     p:last-of-type{
         @include font($fontInter);
     }
-    div{
+    .readmore{
         @include font($fontInter);
         border-radius: 999px;
         height: 40px;
@@ -231,7 +236,7 @@
 @mixin pagination{
     height: 39px;
     display: flex;
-    width: 390px;
+    max-width: 300px;
     justify-content: space-between;
     align-items: center;
     margin: auto;
@@ -261,4 +266,123 @@
         }
     }
 
+}
+
+@mixin article-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        display: flex;
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        h3{
+            @include font($fontAnybody);
+            font-weight: bold;
+            color: $primary-green;
+            display: inline-block;
+            margin-left: 16px;
+            color: $primary-green;
+            margin-left: 16px;
+        }   
+    }
+    p{
+        @include font($fontInter);
+        font-weight: bold;
+        font-size: 16px;
+        width: 131px;
+        height: 38px;
+        border-radius: 999px;
+        color: $primary-green;
+        border: 2px solid $primary-green;
+        text-align: center;
+        line-height: 38px;
+        transition: .3s;
+        &:hover{
+            cursor: pointer;
+            background-color: $dark-blue-01;
+            border: none;
+        }
+    }
+        
+}
+
+@mixin categories{
+    .head{
+        h3{
+            @include font($fontAnybody);
+            color: $primary-green;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+    .content{
+        margin-top: 32px;
+        p{
+            padding: 7px 20px;
+            margin-top: 8px;
+            color: $dark-blue-01;
+            @include font($fontAnybody);
+            font-size: 22px;
+            &:first-of-type{
+                font-weight: bold;
+                background-color: $primary-green-10;
+                border-left: 4px solid $primary-green;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@mixin followus{
+    &:hover{
+        cursor: pointer;
+    }
+    h3{
+        @include font($fontAnybody);
+        color: $primary-green;
+        font-weight: bold;
+    }
+    .logo{
+        display: flex;
+        column-gap: 8px;
+        margin-top: 32px;
+        .item1, .item2, .item3{
+            padding: 5px 0;
+            border-radius: 6px;
+            width: 92px;
+            height: 94px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 39px;
+                height: 39px;
+            }
+            p{
+                @include font($fontInter);
+                color: $light-04;
+                margin: 0;
+            }
+        }
+        .item1{
+            background-color: #1877F2;
+        }
+        .item2{
+            background-color: #FF0302;
+        }
+        .item3{
+        
+            background-color: $light-02;
+            p{
+                color: #0A66C2;
+            }
+        }
+    }
 }

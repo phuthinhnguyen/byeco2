@@ -50,6 +50,7 @@ input, textarea {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  align-items: center;
   height: 92px;
 }
 .content-ourcontact .content-ourcontact-top h1 {
@@ -58,6 +59,7 @@ input, textarea {
   font-family: "Anybody";
 }
 .content-ourcontact .content-ourcontact-top p {
+  max-width: 552px;
   font-family: "Inter";
 }
 .content-ourcontact .content-ourcontact-top p:first-of-type {

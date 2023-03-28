@@ -201,7 +201,7 @@ body {
 .pagination {
   height: 39px;
   display: flex;
-  width: 390px;
+  max-width: 300px;
   justify-content: space-between;
   align-items: center;
   margin: auto;
