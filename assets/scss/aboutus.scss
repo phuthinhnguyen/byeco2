@@ -18,10 +18,13 @@ input,textarea{
    max-width: $max-width-homepage;
    margin: auto;
    position: relative;
-   img{
-        max-height: 477px;
-   }
-   div{
+    .banner-img{
+        height: 477px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner-text{
         height: 326px;
         padding: $padding;
         position: absolute;
@@ -54,7 +57,7 @@ input,textarea{
     padding: $padding;
     padding-top: $padding;
     padding-bottom: $padding;
-    height: 456px;
+
     margin-top: 50px;
     .container{
         display: flex;
@@ -97,6 +100,7 @@ input,textarea{
     margin: auto;
     max-width: $max-width-homepage;
     position: relative;
+    margin-top: 80px;
     .head{
         height: 567px;
         padding: $padding;
@@ -122,8 +126,8 @@ input,textarea{
         .item{
             position: relative;
             background-color: $primary-green;
-            width: 312px;
-            height: 314px;
+            max-width: 312px;
+            max-height: 314px;
             padding-top: 77px;
             padding-left: 30px;
            
@@ -317,6 +321,7 @@ input,textarea{
         width: 70%;
         display: grid;
         grid-template-columns: auto auto auto;
+        order: 0;
     }
     a{
         width: 5px;
@@ -325,6 +330,7 @@ input,textarea{
         margin-right: 10px;     
     }
     .right{
+        order: 1;
         p{
             @include font($fontInter);
             &:first-of-type{
@@ -333,12 +339,90 @@ input,textarea{
             &:last-of-type{
                 color: $dark-03;
             }   
-         
+            
         }
         h1{
             @include font($fontAnybody);
             font-weight: bold;
             color: $primary-green;
+        }
+    }
+}
+@media screen and (max-width:991px) {
+    .banner{
+        .banner-text{
+            max-width: 503px;
+        }
+    }
+    .article{
+        padding-left: 20px;
+        padding-right: 20px;
+        img{
+            display: none;
+        }
+    }
+    .aboutus-content1{
+        padding-left: 20px;
+        padding-right: 20px;
+        .center{
+            top: 500px;
+        }
+        .bottom{
+            display: none;
+        }
+    }
+    .aboutus-content2{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ourexpertise{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .slide{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ourclients{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width:575px) {
+    .slide{
+        .item{
+            &:first-of-type{
+                display: none;
+            }
+            &:last-of-type{
+                display: none;
+            }
+        }
+    }
+    .ourclients{
+        text-align: center;
+        flex-direction: column;
+        .left{
+            grid-template-columns: auto auto;
+            width: 100%;
+            margin-bottom: 40px;
+            order: 1;
+        }
+        a{
+            display: none;
+        }
+        .right{
+           order: 0;
+        }
+       
+    }
+ 
+    #section-counter{
+        height: 500px;
+    }
+    .ftco-counter{
+        .container{
+            flex-direction: column;
         }
     }
 }

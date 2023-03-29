@@ -17,10 +17,13 @@ input, textarea {
   margin: auto;
   position: relative;
 }
-.banner img {
-  max-height: 477px;
+.banner .banner-img {
+  height: 477px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.banner div {
+.banner .banner-text {
   height: 326px;
   padding: 0 112px;
   position: absolute;
@@ -31,16 +34,16 @@ input, textarea {
   padding-top: 39px;
   padding-bottom: 39px;
 }
-.banner div p {
+.banner .banner-text p {
   font-family: "Inter";
   color: #E0E0E0;
 }
-.banner div h1 {
+.banner .banner-text h1 {
   font-family: "Anybody";
   font-weight: bold;
   color: #20A049;
 }
-.banner div h4 {
+.banner .banner-text h4 {
   font-family: "Anybody";
   color: #E6E9EF;
 }
@@ -51,7 +54,6 @@ input, textarea {
   padding: 0 112px;
   padding-top: 0 112px;
   padding-bottom: 0 112px;
-  height: 456px;
   margin-top: 50px;
 }
 .article .container {
@@ -85,6 +87,7 @@ input, textarea {
   margin: auto;
   max-width: 1440px;
   position: relative;
+  margin-top: 80px;
 }
 .aboutus-content1 .head {
   height: 567px;
@@ -111,8 +114,8 @@ input, textarea {
 .aboutus-content1 .center .item {
   position: relative;
   background-color: #20A049;
-  width: 312px;
-  height: 314px;
+  max-width: 312px;
+  max-height: 314px;
   padding-top: 77px;
   padding-left: 30px;
 }
@@ -313,12 +316,16 @@ input, textarea {
   width: 70%;
   display: grid;
   grid-template-columns: auto auto auto;
+  order: 0;
 }
 .ourclients a {
   width: 5px;
   height: 120px;
   background-color: #F5AF0B;
   margin-right: 10px;
+}
+.ourclients .right {
+  order: 1;
 }
 .ourclients .right p {
   font-family: "Inter";
@@ -333,4 +340,73 @@ input, textarea {
   font-family: "Anybody";
   font-weight: bold;
   color: #20A049;
+}
+
+@media screen and (max-width: 991px) {
+  .banner .banner-text {
+    max-width: 503px;
+  }
+  .article {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .article img {
+    display: none;
+  }
+  .aboutus-content1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .aboutus-content1 .center {
+    top: 500px;
+  }
+  .aboutus-content1 .bottom {
+    display: none;
+  }
+  .aboutus-content2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ourexpertise {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .slide {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ourclients {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .slide .item:first-of-type {
+    display: none;
+  }
+  .slide .item:last-of-type {
+    display: none;
+  }
+  .ourclients {
+    text-align: center;
+    flex-direction: column;
+  }
+  .ourclients .left {
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-bottom: 40px;
+    order: 1;
+  }
+  .ourclients a {
+    display: none;
+  }
+  .ourclients .right {
+    order: 0;
+  }
+  #section-counter {
+    height: 500px;
+  }
+  .ftco-counter .container {
+    flex-direction: column;
+  }
 }
