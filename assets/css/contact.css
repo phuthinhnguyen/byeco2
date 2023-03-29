@@ -12,7 +12,7 @@ input, textarea {
 }
 
 .banner {
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
   height: 316px;
   background-position: center;
@@ -37,9 +37,9 @@ input, textarea {
 }
 
 .content-ourcontact {
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
-  padding: 0 112px;
+  padding: 0 50px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -100,9 +100,9 @@ input, textarea {
 
 .content-getintouchandmap {
   height: 670px;
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
-  padding: 0 112px;
+  padding: 0 50px;
   display: flex;
   -moz-column-gap: 20px;
        column-gap: 20px;

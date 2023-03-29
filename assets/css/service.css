@@ -12,7 +12,7 @@ input, textarea {
 }
 
 .banner {
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
   height: 316px;
   background-position: center;
@@ -38,10 +38,10 @@ input, textarea {
 
 .filters-container {
   margin: auto;
-  padding: 0 112px;
+  padding: 0 50px;
   padding-top: 80px;
   padding-bottom: 80px;
-  max-width: 1440px;
+  max-width: 100%;
 }
 .filters-container .filters-wrap {
   list-style-type: none;
@@ -126,6 +126,7 @@ input, textarea {
   height: 100%;
   transition: 0.5s;
   left: 15px;
+  top: 0;
 }
 .filters-container .filters-content .row .all .single-menu .title-wrap:hover {
   color: #FAFAFC;

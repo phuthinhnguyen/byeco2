@@ -13,7 +13,7 @@ input, textarea {
 
 .banner {
   height: 540px;
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
   position: relative;
 }
@@ -25,7 +25,7 @@ input, textarea {
 }
 .banner .banner-text {
   height: 326px;
-  padding: 0 112px;
+  padding: 0 50px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -49,11 +49,11 @@ input, textarea {
 }
 
 .article {
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
-  padding: 0 112px;
-  padding-top: 0 112px;
-  padding-bottom: 0 112px;
+  padding: 0 50px;
+  padding-top: 0 50px;
+  padding-bottom: 0 50px;
   margin-top: 50px;
 }
 .article .container {
@@ -83,15 +83,15 @@ input, textarea {
 }
 
 .aboutus-content1 {
-  height: 1217px;
   margin: auto;
-  max-width: 1440px;
+  max-width: 100%;
   position: relative;
   margin-top: 80px;
 }
 .aboutus-content1 .head {
-  height: 567px;
-  padding: 0 112px;
+  background-position: center;
+  background-size: cover;
+  padding: 0 50px;
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
@@ -107,15 +107,14 @@ input, textarea {
 .aboutus-content1 .center {
   position: absolute;
   left: 112px;
-  top: 470px;
+  top: 500px;
   display: grid;
   grid-template-columns: auto auto auto;
 }
 .aboutus-content1 .center .item {
   position: relative;
-  background-color: #20A049;
-  max-width: 312px;
-  max-height: 314px;
+  width: 312px;
+  height: 314px;
   padding-top: 77px;
   padding-left: 30px;
 }
@@ -135,13 +134,16 @@ input, textarea {
   right: 20px;
   bottom: 20px;
 }
-.aboutus-content1 .center .item2, .aboutus-content1 .center .item4 {
+.aboutus-content1 .center .item1 {
+  background-color: #20A049;
+}
+.aboutus-content1 .center .item2, .aboutus-content1 .center .item5 {
   background-color: #535959;
 }
-.aboutus-content1 .center .item3 {
+.aboutus-content1 .center .item4 {
   background-color: #F1553B;
 }
-.aboutus-content1 .center .item5 {
+.aboutus-content1 .center .item6 {
   background-color: #F5AF0B;
 }
 .aboutus-content1 .bottom {
@@ -158,13 +160,12 @@ input, textarea {
 }
 
 .aboutus-content2 {
-  padding: 0 112px;
+  padding: 0 50px;
   margin: auto;
-  max-width: 1440px;
+  max-width: 100%;
   margin-top: 80px;
 }
 .aboutus-content2 .head {
-  height: 441px;
   display: flex;
 }
 .aboutus-content2 .head .left {
@@ -215,7 +216,6 @@ input, textarea {
 }
 .aboutus-content2 .bottom {
   display: flex;
-  height: 328px;
 }
 .aboutus-content2 .bottom .left {
   flex: 1;
@@ -233,6 +233,9 @@ input, textarea {
 }
 .aboutus-content2 .bottom .right {
   flex: 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #section-counter {
@@ -267,9 +270,9 @@ input, textarea {
 }
 
 .slide {
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
-  padding: 0 112px;
+  padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -300,9 +303,9 @@ input, textarea {
 }
 
 .ourclients {
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
-  padding: 0 112px;
+  padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -342,6 +345,15 @@ input, textarea {
   color: #20A049;
 }
 
+@media screen and (max-width: 1100px) {
+  .aboutus-content1 .center .item {
+    width: 250px;
+    height: 252px;
+  }
+  .aboutus-content1 .bottom {
+    height: 450px;
+  }
+}
 @media screen and (max-width: 991px) {
   .banner .banner-text {
     max-width: 503px;
@@ -353,12 +365,16 @@ input, textarea {
   .article img {
     display: none;
   }
-  .aboutus-content1 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .aboutus-content1 .center {
-    top: 500px;
+    padding: 0 50px;
+    position: static;
+  }
+  .aboutus-content1 .center .item {
+    padding: 20px 10px;
+  }
+  .aboutus-content1 .center .item img {
+    width: 50px;
+    height: 50px;
   }
   .aboutus-content1 .bottom {
     display: none;
@@ -380,7 +396,26 @@ input, textarea {
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 767px) {
+  .aboutus-content1 .head {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .aboutus-content1 .center {
+    padding: 0;
+    grid-template-columns: auto auto;
+  }
+  .aboutus-content1 .center .item {
+    width: 100%;
+  }
+  .aboutus-content2 {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 575px) {
+  .slide {
+    justify-content: center;
+  }
   .slide .item:first-of-type {
     display: none;
   }
@@ -402,11 +437,33 @@ input, textarea {
   }
   .ourclients .right {
     order: 0;
+    margin-top: -50px;
+    margin-bottom: 40px;
   }
   #section-counter {
     height: 500px;
   }
   .ftco-counter .container {
     flex-direction: column;
+  }
+  .aboutus-content1 .head {
+    flex-direction: column;
+  }
+  .aboutus-content2 .head {
+    display: block;
+  }
+  .aboutus-content2 .bottom {
+    display: block;
+  }
+  .aboutus-content2 .bottom .right {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner .banner-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

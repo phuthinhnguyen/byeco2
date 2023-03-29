@@ -12,9 +12,9 @@ input, textarea {
 }
 
 .banner {
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
-  padding: 0 112px;
+  padding: 0 50px;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #060810;
@@ -268,10 +268,10 @@ input, textarea {
 }
 
 .article-categories {
-  padding: 0 112px;
+  padding: 0 50px;
   margin: auto;
   padding-top: 80px;
-  max-width: 1440px;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   -moz-column-gap: 50px;
@@ -575,9 +575,9 @@ input, textarea {
 }
 
 .videos {
-  padding: 0 112px;
+  padding: 0 50px;
   margin: auto;
-  max-width: 1440px;
+  max-width: 100%;
   display: flex;
   -moz-column-gap: 181px;
        column-gap: 181px;
