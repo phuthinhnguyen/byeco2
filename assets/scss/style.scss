@@ -1,6 +1,7 @@
 @import "font";
 @import "variable";
 @import "mixin";
+
 img{
     width: 100%;
     height: auto;
@@ -134,14 +135,13 @@ nav{
                         border-bottom: 5px solid $primary-green;
                         .menu-dropdown-item
                         {
-                            div{
-                              
+                            .menu-dropdown-item-content{
                                 a{
-                                    img{
+                                    .img-language{
                                         width: 20px;
                                         height: 20px;
                                         margin-right: 10px;
-                                        border-radius: 50%;
+                                       
                                     }
                                     padding: 5px;
                                     font-size: small;
@@ -185,7 +185,6 @@ nav{
         }
         .offcanvas{
             padding: 0;
-            background-color: $dark-blue-01;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -201,16 +200,19 @@ nav{
                     width: 66px;
                     height: 41px;
                 }
-                button{
+                div{
                     img{
                         width: 30px;
                         height: 30px;
+                        &:hover{
+                            cursor: pointer;
+                        }
                     }
                 }
             }
             .offcanvas-header-bottom{
                 height: 404px;
-                width: 290px;
+             
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -218,13 +220,14 @@ nav{
                 a{
                     display: block;
                     text-decoration: none;
-                    color: $light-04;
                     &:first-of-type{
                         color: $primary-green;
                     }
                     h5{
                         @include font($fontAnybody);
                         transition: 0.3s;
+                        color: $dark-blue-01;
+                        font-weight: bold;
                     }
                     &:hover{
                         h5{
@@ -232,16 +235,18 @@ nav{
                         }
                     }
                 }
-                div{
+                .language{
                     width: 128px;
                     height: 44px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     column-gap: 16px;
+                    border-radius: 0;
                     img{
                         width: 36px;
                         height: 24px;
+                        border-radius: 0;
                         &:hover{
                             cursor: pointer;
                         }
@@ -385,6 +390,7 @@ nav{
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     .content-masssolutions-container{
         position: absolute;
@@ -666,10 +672,8 @@ nav{
             }
            
             .text{
-                height: 112px;
                 margin-top: 20px;
                @include newsandblogs;
-               
             }
         }
     }
@@ -728,7 +732,6 @@ nav{
             }
            
             .text{
-                height: 166px;
                 margin-top: 20px;
                 span{
                     color: $dark-03;
@@ -762,17 +765,12 @@ nav{
             .content{
                 display: flex;
                 column-gap: 26px;
-                height: 153px;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                align-items: flex-start;
                 &:hover{
                     cursor: pointer;
                 }
-                img{
-                    max-width: 30%;
-                    min-height: 100%;
-                }
-                div{ 
+             
+                .content-text{ 
                     flex: 4;
                     display: flex;
                     flex-direction: column;
@@ -800,6 +798,19 @@ nav{
                         @include font($fontAnybody);
                     }
                 }
+                .content-img{
+                    overflow: hidden;
+                    border-radius: 10px;
+                    img{
+                        max-width: 100%;
+                        min-height: 100%;
+                        transition: 0.5s;
+                        overflow: hidden;
+                        &:hover{
+                            scale: 1.2;
+                        }
+                    }
+                }
              
             }
         }
@@ -810,6 +821,7 @@ nav{
         margin-top: 80px;
         display: none;
         height: 600px;
+        min-height: 700px;
         .item1{
             height: 100%;
             color: $dark-04;
@@ -869,8 +881,7 @@ nav{
                 &:hover{
                     cursor: pointer;
                 }
-                height: 168px;
-                overflow: hidden;
+        
                 h6{
                     @include font($fontAnybody);
                     font-weight: bold;
@@ -878,13 +889,8 @@ nav{
                 .bottom{
                     display: flex;
                     column-gap: 10px;
-                   
-                    img{
-                        width: 50%;
-                        height: auto;
-                        max-height: 120px;
-                    }
-                    div{
+                    .text{
+                        flex: 2;
                         span{
                             color: $dark-03;
                             font-size: small;
@@ -901,6 +907,17 @@ nav{
                                 display: inline-block;
                                 border-radius: 50%;
                                 margin: 0 10px;
+                            }
+                        }
+                    }
+                    .content-bottom-img{
+                        overflow: hidden;
+                        border-radius: 10px;
+                        img{
+                            transition: 0.5s;
+                            overflow: hidden;
+                            &:hover{
+                                scale: 1.2;
                             }
                         }
                     }
@@ -935,6 +952,10 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .wrap{
         background-color: black;
         width: 100%;
@@ -1232,6 +1253,8 @@ footer{
     }
     nav{
         .row{
+            padding-left: 30px;
+            padding-right: 30px;
             .center{
                 justify-content: center;
                 ul{
@@ -1479,8 +1502,8 @@ footer{
         }
     }
     .content-newsandblogs{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .content-theytrustus{
         .content-theytrustus-bottom{
@@ -1535,7 +1558,37 @@ footer{
     }
    
 }
+@media screen and (max-width:450px){
+    .content-ourservices{
+        .content-ourservices-bottom{
+            .item{
+                width: 350px;
+                padding: 5px;
+            }
+        }
+    }
+    .content-newsandblogs{
+        .content-newsandblogs-bottom-tablet{
+            height: 100%;
+            .item1{
+                display: none;
+            }
+            .item2{
+                .content{
+                    .bottom{
+                        display: block;
+                        .text{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
 @media screen and (max-width:380px){
+   
     .image-slide{
         .slide-button{
             left: 20%;
@@ -1551,3 +1604,4 @@ footer{
     }
    
 }
+

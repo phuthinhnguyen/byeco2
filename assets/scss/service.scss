@@ -26,6 +26,14 @@ input,textarea{
             .single-menu{
                 .title-wrap{
                     @include ourservice-item;
+                    .img-service-hover{
+                        width: 98%;
+                    }
+                    div{
+                        p{
+                            padding: 20px;
+                        }
+                    }
                 }
             }
         }
@@ -45,8 +53,10 @@ input,textarea{
         padding-right: 10px;
         .filters-content{
             .row{
+                max-width: 99%;
+                margin: auto;
                 .all{
-                    max-width: 50%;
+                    max-width: 48%;
                     .single-menu{
                         .tittle-wrap{
 
@@ -57,6 +67,8 @@ input,textarea{
         }
     }
 }
+
+
 @media screen and (max-width:575px){
     .filters-container{
         padding-left: 10px;

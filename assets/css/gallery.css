@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Anybody";
+  src: url("/assets/font/Anybody/Anybody-VariableFont_wdth_wght.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/font/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("/assets/font/Mulish/Mulish-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/font/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
 img {
   width: 100%;
   height: auto;
@@ -70,10 +86,7 @@ body {
 .filters-container .filters-content .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
   position: relative;
-  height: 600px;
 }
 .filters-container .filters-content .row .all {
   width: 100%;
@@ -238,19 +251,29 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .filters-container .filters-content .row {
+    max-width: 99%;
+    margin: auto;
+  }
   .filters-container .filters-content .row .all {
-    max-width: 50%;
+    max-width: 49%;
   }
 }
 @media screen and (max-width: 575px) {
   .filters-container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
   }
   .filters-container .filters-wrap #all-responsive {
     display: none;
   }
+  .filters-container .filters-content .row {
+    max-width: 99%;
+    margin: auto;
+  }
   .filters-container .filters-content .row .all {
-    max-width: 100%;
+    max-width: 99%;
+  }
+  .pagination {
+    margin-top: 30px;
   }
 }

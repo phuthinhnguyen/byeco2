@@ -151,8 +151,10 @@ body{
         padding-right: 10px;
         .filters-content{
             .row{
+                max-width: 99%;
+                margin: auto;
                 .all{
-                    max-width: 50%;
+                    max-width: 49%;
                     .single-menu{
                         .tittle-wrap{
 
@@ -165,8 +167,7 @@ body{
 }
 @media screen and (max-width:575px){
     .filters-container{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 10px;
         .filters-wrap{
             #all-responsive{
                 display: none;
@@ -174,8 +175,10 @@ body{
         }
         .filters-content{
             .row{
+                max-width: 99%;
+                margin: auto;
                 .all{
-                    max-width: 100%;
+                    max-width: 99%;
                     .single-menu{
                         .tittle-wrap{
                             
@@ -184,5 +187,8 @@ body{
                 }
             }
         }
+    }
+    .pagination{
+        margin-top: 30px;
     }
 }

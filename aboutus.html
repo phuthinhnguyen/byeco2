@@ -5,13 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/style.css"> 
+        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/aboutus.css">
         <link rel="stylesheet" href="assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
         <script src="assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
         <script src="assets/js/jquery-3.6.4.js"></script>
         <link rel="icon" type="image/x-icon" href="assets/image/index/LogoBYECO2-footer.svg">
         <title>About Us</title>
@@ -44,11 +41,11 @@
                         <a href="aboutus.html"><h6>About us</h6></a>
                     </li>
                     <li>
-                        <a href="service.html"><h6>Services<i class="fa fa-chevron-down" aria-hidden="true"></i></h6></a>
+                        <a href="service.html"><h6>Services<img src="assets/image/index/nav-arrow.svg" alt=""></h6></a>
                         <div class="menu-dropdown">
                             <div class="menu-dropdown-item">
-                                <div><a href="">Service 1</a></div>
-                                <div><a href="">Service 2</a></div>
+                                <div class="menu-dropdown-item-content"><a href="">Service 1</a></div>
+                                <div class="menu-dropdown-item-content"><a href="">Service 2</a></div>
                             </div>
                         </div>
                     </li>
@@ -62,49 +59,48 @@
                         <a href="contact.html"><h6>Contact</h6></a>
                     </li>
                     <li>
-                        <a href=""><h6>Languages<i class="fa fa-chevron-down" aria-hidden="true"></i></h6></a>
+                        <a href=""><h6>Languages<img src="assets/image/index/nav-arrow.svg" alt=""></h6></a>
                         <div class="menu-dropdown">
                             <div class="menu-dropdown-item">
-                                <div><a href=""><img src="assets/image/index/us.svg" alt="">English</a></div>
-                                <div><a href=""><img src="assets/image/index/vi.svg" alt="">Vietnamese</a></div>
+                                <div class="menu-dropdown-item-content"><a href=""><img class="img-language" src="assets/image/index/us.svg" alt="">English</a></div>
+                                <div class="menu-dropdown-item-content"><a href=""><img class="img-language" src="assets/image/index/vi.svg" alt="">Vietnamese</a></div>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="right">
-                <img src="assets/image/index/us.svg" alt="">
-                <img src="assets/image/index/vi.svg" alt="">
+                <img src="assets/image/index/us-rect.svg" alt="">
+                <img src="assets/image/index/vi-rect.svg" alt="">
             </div>
             <div class="col-4 menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">
-                <a class="bar"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <a class="bar"><img src="assets/image/index/bar.svg" alt=""></a>
             </div>
             <div class="offcanvas offcanvas-start offcanvas-change" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div class="offcanvas-header">
-                    <div class="offcanvas-header-top">
-                        <img src="assets/image/index/LogoBYECO2.svg" alt="">
-                        <img src="assets/image/index/cheveron-right.svg" alt="">
-                    </div>
-                    <div class="offcanvas-header-bottom">
-                        <a href=""><h5>Home</h5></a>
-                        <a href=""><h5>About us</h5></a>
-                        <a href=""><h5>Service</h5></a>
-                        <a href=""><h5>Gallery</h5></a>
-                        <a href=""><h5>News</h5></a>
-                        <a href=""><h5>Contact</h5></a>
-                        <div>
-                            <img src="assets/image/index/us.svg" alt="">
-                            <img src="assets/image/index/vi.svg" alt="">
-                        </div>
+                    <img src="assets/image/index/LogoBYECO2.svg" alt="">
+                    <div data-bs-dismiss="offcanvas"><img src="assets/image/index/cheveron-right.svg" alt=""></div>
+                </div>
+                <div class="offcanvas-header-bottom">
+                    <a href="index.html"><h5>Home</h5></a>
+                    <a href="aboutus.html"><h5>About us</h5></a>
+                    <a href="service.html"><h5>Service</h5></a>
+                    <a href="gallery.html"><h5>Gallery</h5></a>
+                    <a href="news-main.html"><h5>News</h5></a>
+                    <a href="contact.html"><h5>Contact</h5></a>
+                    <div class="language">
+                        <img src="assets/image/index/us-rect.svg" alt="">
+                        <img src="assets/image/index/vi-rect.svg" alt="">
                     </div>
                 </div>
             </div>
         </div>
+        
     </nav> 
 
     <!-- banner -->
     <div class="banner">
-        <div class="banner-img" style="background-image: url(assets/image/aboutus/bg.svg);">
+        <div class="banner-img" style="background-image: url(assets/image/aboutus/bg.png);">
 
         </div>
         <!-- <img src="assets/image/aboutus/bg.svg" alt="">   -->
@@ -118,7 +114,7 @@
     <!-- article -->
     <div class="article">
         <div class="container">
-            <img src="assets/image/aboutus/aboutus1.svg" alt="">
+            <img src="assets/image/aboutus/aboutus1.png" alt="">
             <a></a>
             <div>
                 <h1>CÔNG TY CỔ PHẦN NĂNG LƯỢNG VÀ MÔI TRƯỜNG THÔNG MINH </h1>
@@ -130,7 +126,7 @@
 
     <!-- aboutus-content1 -->
     <div class="aboutus-content1">
-        <div class="head" style="background-image:url(assets/image/aboutus/aboutus2.svg)">
+        <div class="head" style="background-image:url(assets/image/aboutus/aboutus2.png)">
             <div>
                 <p>Với chủ trương hướng tới nền kinh tế số, kinh tế tuần hoàn, cùng những nhu cầu cấp thiết trong việc triển khai <strong>hiến lược quốc gia về Biến đổi khí hậu giai đoạn đến 2050, Cam kết của Chính phủ tại COP26, Luật bảo vệ môi trường năm 2020 và các Thông tư, Nghị định của Chính phủ có liên quan về giảm nhẹ phát thải khí nhà kính.</strong> BYECO2 ra đời với tầm nhìn và sứ mệnh mới, dẫn đầu là Công ty ứng dụng số hóa, mang lại những sản phẩm dịch vụ đạt tiêu chuẩn trong nước và quốc tế</p>
                 <p>Trong đó, Công ty cam kết chặt chẽ về dữ liệu đo kiểm năng lượng và khí thải là là Thích hợp (Relevance) - Đầy đủ (Completeness) - Tính nhất quán (Consistency) - Minh bạch (Transparency) - và Tính chính xác (Accuracy).</p>
@@ -199,7 +195,7 @@
                 <p>Cung cấp các sản phẩm dịch vụ về kiểm toán năng lượng, đo kiểm khí thải nhà kính chính xác, tiện lợi, mang tính thực tiễn và đạt tiêu chuẩn quốc tế.</p>
                 <p>Cam kết thúc đẩy sự phát triển bền vững của các doanh nghiệp trên toàn cầu.</p>
             </div>
-            <div class="right" style="background-image:url(assets/image/aboutus/aboutus10.svg)">
+            <div class="right" style="background-image:url(assets/image/aboutus/aboutus10.png)">
             </div>
         </div>
     </div>
@@ -339,7 +335,7 @@
     <footer>
         <div class="footer-top">
             <div class="item1">
-                <img src="assets/image/index/LogoBYECO2.svg" alt="">
+                <img src="assets/image/index/LogoBYECO2-footer.svg" alt="">
                 <h5>CÔNG TY CỔ PHẦN NĂNG LƯỢNG VÀ MÔI TRƯỜNG THÔNG MINH BYECO2</h5>
                 <div>
                     <a href=""><img src="assets/image/index/footer1.svg" alt=""></a>
