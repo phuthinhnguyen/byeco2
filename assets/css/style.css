@@ -692,6 +692,18 @@ nav .row .offcanvas .offcanvas-header-bottom div img:hover {
   color: #EA6B39;
   margin-top: 12px;
 }
+.content-featuredproject .content-featuredproject-content .item div {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.content-featuredproject .content-featuredproject-content .item div:hover img {
+  scale: 1.2;
+  cursor: pointer;
+}
+.content-featuredproject .content-featuredproject-content .item div img {
+  transition: 0.5s;
+  border-radius: 10px;
+}
 .content-featuredproject .seemore1 {
   height: 54px;
   width: 143px;

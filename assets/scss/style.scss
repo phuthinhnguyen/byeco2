@@ -580,6 +580,7 @@ nav{
         row-gap: 80px;
         .item{
             text-align: center;
+         
             p{
                 @include font($fontInter);
                 font-size: 14px;
@@ -592,6 +593,18 @@ nav{
                 font-weight: bold;
                 color: $primary-coral-50;
                 margin-top: 12px;
+            }
+            div{
+                overflow: hidden;
+                border-radius: 10px;
+                &:hover img{
+                    scale: 1.2;
+                    cursor: pointer;
+                }
+                img{
+                    transition: .5s;
+                    border-radius: 10px;
+                }
             }
         }
     }
