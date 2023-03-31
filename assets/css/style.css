@@ -400,6 +400,9 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 0 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ftco-counter {
