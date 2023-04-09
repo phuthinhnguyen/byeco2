@@ -122,21 +122,15 @@ input, textarea {
 .aboutus-content1 .center .item h4 {
   font-family: "Anybody";
   color: #E1FAE4;
+  filter: brightness(1);
 }
 .aboutus-content1 .center .item h2 {
   font-family: "Anybody";
   color: #E1FAE4;
   font-weight: bold;
+  filter: brightness(1);
 }
-.aboutus-content1 .center .item img:first-of-type {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-.aboutus-content1 .center .item img:last-of-type {
+.aboutus-content1 .center .item img {
   width: 86px;
   height: 86px;
   position: absolute;
@@ -146,11 +140,24 @@ input, textarea {
 .aboutus-content1 .center .item1 {
   background-color: #20A049;
 }
-.aboutus-content1 .center .item2, .aboutus-content1 .center .item5 {
-  background-color: #535959;
+.aboutus-content1 .center .item2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutus-content1 .center .item2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .aboutus-content1 .center .item4 {
   background-color: #F1553B;
+}
+.aboutus-content1 .center .item5 {
+  background-color: #535959;
 }
 .aboutus-content1 .center .item6 {
   background-color: #F5AF0B;
