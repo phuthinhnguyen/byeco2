@@ -105,11 +105,12 @@ input, textarea {
   margin-top: 16px;
 }
 .aboutus-content1 .center {
-  position: absolute;
-  left: 112px;
-  top: 500px;
+  margin-top: -50px;
+  margin-bottom: 200px;
+  padding-left: 100px;
   display: grid;
   grid-template-columns: auto auto auto;
+  width: 48%;
 }
 .aboutus-content1 .center .item {
   position: relative;
@@ -127,7 +128,15 @@ input, textarea {
   color: #E1FAE4;
   font-weight: bold;
 }
-.aboutus-content1 .center .item img {
+.aboutus-content1 .center .item img:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.aboutus-content1 .center .item img:last-of-type {
   width: 86px;
   height: 86px;
   position: absolute;
@@ -147,13 +156,15 @@ input, textarea {
   background-color: #F5AF0B;
 }
 .aboutus-content1 .bottom {
-  height: 650px;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 380px;
+  width: 49%;
 }
 .aboutus-content1 .bottom p {
   position: absolute;
-  max-width: 562px;
-  right: 112px;
+  max-width: 95%;
+  text-align: left;
   top: 80px;
   font-family: "Inter";
   font-size: 16px;
@@ -345,6 +356,25 @@ input, textarea {
   color: #20A049;
 }
 
+@media screen and (max-width: 1470px) {
+  .aboutus-content1 .center {
+    padding-left: 50px;
+  }
+  .aboutus-content1 .bottom {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .aboutus-content1 .bottom {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .aboutus-content1 .bottom {
+    width: 35%;
+    top: 430px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .aboutus-content1 .center .item {
     width: 250px;
@@ -352,6 +382,8 @@ input, textarea {
   }
   .aboutus-content1 .bottom {
     height: 450px;
+    width: 40%;
+    top: 450px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -396,6 +428,12 @@ input, textarea {
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 830px) {
+  .aboutus-content1 .center .item {
+    width: 220px;
+    height: 222px;
+  }
+}
 @media screen and (max-width: 767px) {
   .aboutus-content1 .head {
     padding-left: 20px;
@@ -404,6 +442,8 @@ input, textarea {
   .aboutus-content1 .center {
     padding: 0;
     grid-template-columns: auto auto;
+    width: 100%;
+    margin-bottom: 0;
   }
   .aboutus-content1 .center .item {
     width: 100%;
@@ -413,6 +453,7 @@ input, textarea {
   }
   .aboutus-content2 {
     padding: 0;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 575px) {
