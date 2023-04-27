@@ -491,9 +491,6 @@ input, textarea {
     margin-top: -50px;
     margin-bottom: 40px;
   }
-  #section-counter {
-    height: 500px;
-  }
   .ftco-counter .container {
     flex-direction: column;
   }

@@ -393,7 +393,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 #section-counter {
   position: relative;
   z-index: -1;
-  height: 206px;
+  min-height: 206px;
   max-width: 100%;
   margin: auto;
   background-size: cover;
@@ -417,7 +417,6 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   align-items: center;
 }
 .ftco-counter .container .item {
-  height: 110px;
   width: 313px;
 }
 .ftco-counter .container .item .text {
@@ -1510,9 +1509,6 @@ footer .footer-bottom p {
   }
   .image-slide .slide-button {
     left: 30%;
-  }
-  #section-counter {
-    height: 500px;
   }
   .ftco-counter .container {
     flex-direction: column;

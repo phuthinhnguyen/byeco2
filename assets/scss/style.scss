@@ -338,7 +338,8 @@ nav{
 #section-counter{
     position: relative;
     z-index: -1; 
-    height: 206px;
+    // height: 206px;
+    min-height: 206px;
     max-width: $max-width-homepage ;
     margin: auto;
     background-size: cover;
@@ -358,7 +359,7 @@ nav{
         justify-content: center;
         align-items: center;
         .item{
-            height: 110px;
+            // height: 110px;
             width: 313px;
             .text{
                 text-align: center;
@@ -1454,7 +1455,7 @@ footer{
         }
     }
     #section-counter{
-        height: 500px;
+        // height: 500px;
     }
     .ftco-counter{
         .container{
